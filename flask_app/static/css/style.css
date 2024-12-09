@@ -57,17 +57,20 @@
 
 /* Selected (checked) state styling */
 .list-group-item-check:checked + .list-group-item {
-    background: linear-gradient(300deg, #00bfff, #eb72ef, #4c58ff);
-    
-    border-color: #0056b3;
+    background: linear-gradient(300deg, #4c58ff, #eb72ef);
     color: #fff; /* White text for contrast */
     }
 
 /* Text styling inside the label */
 .list-group-item span {
     font-size: 0.85rem;
-    color: #6c757d; /* Muted text color */
+    color: #686d6d; /* Muted text color */
     }
+
+/* Ensuring all text within the label, including subtext in <span>, is white */
+.list-group-item-check:checked + .list-group-item span {
+  color: #fff; /* White text for contrast */
+}
 
 /* Disabled state styling */
 .list-group-item-check:disabled + .list-group-item {
